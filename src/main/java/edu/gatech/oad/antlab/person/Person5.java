@@ -1,10 +1,10 @@
-package edu.gatech.oad.antlab.person;
+//package edu.gatech.oad.antlab.person;
 
 /**
  *  A simple class for person 5
  *  returns their name and a
- *  modified string 
- *  
+ *  modified string
+ *
  *  @author Bob
  *  @version 1.1
  */
@@ -16,8 +16,13 @@ public class Person5 {
 	 * name
 	 * @param pname the person's real name
 	 */
+
   public Person5(String pname) {
     name = pname;
+  }
+  public static void main(String[] args) {
+      Person5 sanj = new Person5("Sanjana");
+      System.out.println(sanj.calc("gtg123b"));
   }
   	/**
 	 * This method should take the string
@@ -31,15 +36,17 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  return null;
+      String output = input.substring(2, input.length()) + input.substring(0,2);
+      System.out.println(output);
+	  return output;
 	}
-	
+
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
 	 *
 	 * @param input the varying string
-	 * @return the string representing the 
+	 * @return the string representing the
 	 *         object
 	 */
 	public String toString(String input) {
