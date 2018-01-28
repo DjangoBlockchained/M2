@@ -1,5 +1,5 @@
 package edu.gatech.oad.antlab.person;
-java.util.StringBuffer
+
 /**
  *  A simple class for person 3
  *  returns their name and a
