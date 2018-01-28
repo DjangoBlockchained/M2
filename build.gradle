@@ -1,5 +1,5 @@
 //Set a default task, so if you don't provide any, these will be executed.
-// defaultTasks   'task1', 'task2'
+defaultTasks   'jar'
 
 //Import a bunch of Java related tasks to help you
 //By default production code should be in src/main/java
@@ -12,18 +12,9 @@
 //also available is check which will compile and run the tests
 apply plugin: 'java'
 
-// apply plugin: 'findbugs'
-
 apply plugin: 'pmd'
 
 apply plugin: 'application'
-
-
-
-// task runp1(dependsOn:build)<< {
-//    mainClassName = "HelloWorld"
-// }
-
 
 
 //set up some variables
